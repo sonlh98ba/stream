@@ -9,4 +9,4 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req,res) => res.render('home'));
 
-app.listen(8888,()=>console.log('Server started'));
+app.listen( process.env.PORT || 8888,()=>console.log('Server started'));
